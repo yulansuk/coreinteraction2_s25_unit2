@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yulan</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 300px;
+      transition: background-color 0.5s ease;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .letter {
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .y:hover {
+      color: red; 
+    }
+
+    .u:hover {
+      color: orange; 
+    }
+
+    .l:hover {
+      color: yellow;
+    }
+
+    .a:hover {
+      color: green; 
+    }
+
+    .n:hover {
+      color: blue; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="letter y" onclick="document.body.style.backgroundColor = 'red'">Y</div>
+    <div class="letter u" onclick="document.body.style.backgroundColor = 'orange'">U</div>
+    <div class="letter l" onclick="document.body.style.backgroundColor = 'yellow'">L</div>
+    <div class="letter a" onclick="document.body.style.backgroundColor = 'green'">A</div>
+    <div class="letter n" onclick="document.body.style.backgroundColor = 'blue'">N</div>
+  </div>
+</body>
+</html>
